@@ -1,17 +1,33 @@
 #heartbeat{
     position: absolute;
     top: 27%;
-    left: 6%;
-    width: 18%;
+    left: 2%;
+    width: 24%;
     height: 18%;
+    /*background-color: #f00;*/
+    z-index: 3;
 }
 
 #heartrate {
     position: absolute;
-    width: 60%;
-    height: 30%;
-    top: 27%;
-    left: 20%;
-    
+    width: 54%;
+    top: 22%;
+    left: 26%;
+}
 
+.heartrate-hide {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+    z-index: 2;
+}
+
+#heartbeat-number {
+    position: absolute;
+    right: 0;
+    width: 10%;
+    font-size: 48px;
+    font-weight: 300;
 }

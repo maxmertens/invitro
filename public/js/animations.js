@@ -15,3 +15,7 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: 'json/heartrate.json'
 })
+
+window.setInterval(function() {
+	$('#heartbeat-number').html(parseInt(Math.random() *200));	
+}, 1000)
