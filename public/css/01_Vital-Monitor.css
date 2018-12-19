@@ -1,0 +1,17 @@
+#heartbeat{
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    width: 18%;
+    height: 18%;
+}
+
+#heartrate {
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    top: 27%;
+    left: 20%;
+    
+
+}
