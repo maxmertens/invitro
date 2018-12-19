@@ -1,8 +1,22 @@
 
+@font-face {
+    font-family: Atlas Grotesk light;
+    src: url(../font/AtlasGrotesk-Light.otf);
+  }
+  @font-face {
+    font-family: Atlas Grotesk regular;
+    src: url(../font/AtlasGrotesk-Regular.otf);
+  }
+  @font-face {
+    font-family: Atlas Grotesk medium;
+    src: url(../font/AtlasGrotesk-Medium.otf);
+  }
+
+
 html, body { 
     margin: 0; 
     color: white; 
-    font-family: Aktiv Grotesk, Helvetica, sans-serif; 
+    font-family: Atlas Grotesk regular, Helvetica, sans-serif; 
     background-color: black;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -13,21 +27,32 @@ html, body {
 
 .topbar {
     width: calc(100vw - 20px);
-    margin: 10px;
+    margin: 10px 10px 10px 44px;
     font-size: 20px;
+    line-height: 16px;
+
 }
 
 .menu-active {
-    font-weight: 500;
-    color: white;
+    font-weight: 400;
+    opacity: 1;
 }
 
 td {
-    text-align: center;
-    color: gray;
+    text-align: left;
     width: 25%;
+    opacity: 0.25;
 }
 
+.japanese {
+    font-family: .PingFang SC;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.japanese > menu-active  {
+    opacity: 0.5;
+}
 
 /* SCREENS*/
 

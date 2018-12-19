@@ -3,7 +3,7 @@ let http = require('http');
 let express = require('express');
 let io = require('socket.io');
 let five = require("johnny-five");
-let rotaryEncoder = require('./encoder');
+let rotaryEncoder = require('./public/js/encoder');
 
 // require jquery?? <-
 
