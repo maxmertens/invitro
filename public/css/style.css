@@ -1,0 +1,63 @@
+
+html, body { 
+    margin: 0; 
+    color: white; 
+    font-family: Atlas Grotesk, Helvetica, sans-serif; 
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* NAVIGATION TOP*/
+
+.topbar {
+    width: calc(100vw - 20px);
+    margin: 10px;
+    font-size: 20px;
+}
+
+.menu-active {
+    font-weight: 500;
+    color: white;
+}
+
+td {
+    text-align: center;
+    color: gray;
+    width: 25%;
+}
+
+
+/* SCREENS*/
+
+.box {
+    width: 100vw;
+    height: calc(100vh - 68px);
+    transition: 0.5s linear all;
+    opacity: 0;
+    position: absolute;
+}
+
+.screen-active {
+    opacity: 1;
+}
+
+.screen1 {     
+    background: url(../img/screen01.png) center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.screen2 {     
+    background: url(../img/screen02.png) center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.screen3 {     
+    background: url(../img/screen03.png) center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
