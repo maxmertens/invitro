@@ -63,7 +63,6 @@ html, body {
 .box {
     width: 100vw;
     height: calc(100vh - 68px);
-    transition: 0.5s linear all;
     opacity: 0;
     position: absolute;
 }
@@ -86,3 +85,8 @@ html, body {
     background-repeat: no-repeat; 
 }
 
+.screen4 {     
+    background: url(../img/screen04.png) center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}

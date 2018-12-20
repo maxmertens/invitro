@@ -18,7 +18,7 @@ window.setInterval(function() {
 }, 5000)
 
 window.setInterval(function() {
-	$('#vital-monitor-stats-main-02').html(randomIntFromInterval(20,30));	
+	$('#vital-monitor-stats-main-02').html((Math.random() * (26 - 17) + 17).toFixed(1));	
 }, 600)
 
 window.setInterval(function() {

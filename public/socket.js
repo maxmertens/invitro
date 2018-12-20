@@ -11,13 +11,13 @@ socket.on('data', function(val){
 
     // Logic for the active state
     if (val < 255) {
-        active = 0;
-    } else if (val > 255 && val < 511) {
-        active = 1;
-    } else if (val > 511 && val < 767) {
-        active = 2;
-    } else if (val > 767) {
         active = 3;
+    } else if (val > 255 && val < 511) {
+        active = 2;
+    } else if (val > 511 && val < 767) {
+        active = 1;
+    } else if (val > 767) {
+        active = 0;
     }
 
 
