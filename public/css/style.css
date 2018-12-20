@@ -39,7 +39,7 @@ html, body {
 
 .menu-active {
     font-weight: 400;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .topbar td {

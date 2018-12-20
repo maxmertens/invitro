@@ -7,7 +7,7 @@
 
 #container-pulse-number{
     position: absolute;
-    bottom: 32px;
+    bottom: 28px;
     left: 5%;
 }
 #heartbeat-number {
@@ -18,15 +18,19 @@
 }
 
 #pulse {
-    height: 100px;
-    width: 100px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 90px;
+    bottom: -8px;
 }
 
 #heartrate {
     position: absolute;
-    width: 55%;
-    top: 26%;
-    left: 10%;
+    top: -60px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 
@@ -38,6 +42,10 @@
     left: 290px;
     bottom: 20px;
     width: 55vw;
+}
+
+.vital-monitor-stats td {
+    width: 25%;
 }
 
 .vital-monitor-stats-top {
