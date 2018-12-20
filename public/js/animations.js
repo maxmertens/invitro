@@ -39,7 +39,7 @@ var countertouch = false;
 var counter = 0;
 
 window.addEventListener('touchstart', function() {
-    $('#Screensaver').hide();
+    $('#Screensaver').addClass("hideScreensaver");
     counter = 0;
     console.log("touch!!!!!");
     countertouch = true;
@@ -48,11 +48,10 @@ window.addEventListener('touchstart', function() {
         counter = counter + 1;
         console.log(counter);
 
-        if(counter > 10) {
-            $('#Screensaver').show();
+        if(counter > 20) {
+            $('#Screensaver').removeClass("hideScreensaver");
         }
     }, 1000);
-
 });
 
 

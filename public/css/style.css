@@ -32,9 +32,15 @@ html, body {
     height: 100vh;
     position: absolute;
     z-index: 2000;
+    transition: all 0.60s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 
+.hideScreensaver {
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
+}
 
 /* NAVIGATION TOP*/
 
