@@ -1,33 +1,36 @@
+@font-face {
+    font-family: 'SimplonBPRegular';
+    url('../fonts/simplon/SimplonBPRegular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #heartbeat{
     position: absolute;
-    top: 27%;
-    left: 2%;
-    width: 24%;
-    height: 18%;
-    /*background-color: #f00;*/
-    z-index: 3;
+    top: 40%;
+    left: 65%;
+
 }
 
 #heartrate {
     position: absolute;
-    width: 54%;
-    top: 22%;
-    left: 26%;
+    width: 55%;
+    top: 26%;
+    left: 10%;
 }
 
-.heartrate-hide {
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.85;
-    z-index: 2;
+#pulse {
+    top: 50%;
+    width: 50%;
 }
 
 #heartbeat-number {
+    font-family: 'Roboto Mono', monospace;
     position: absolute;
-    right: 0;
-    width: 10%;
-    font-size: 48px;
-    font-weight: 300;
+    text-align: right;
+    
+    width: 150%;
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 40px;
 }
