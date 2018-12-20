@@ -14,12 +14,12 @@ module.exports = function rotaryEncoder({
     handleWaveform();
   });
 
-  downButton.on('up', () => {
+  downButton.on('down', () => {
     waveform += '0';
     handleWaveform();
   });
 
-  pressButton.on('up', () => {
+  pressButton.on('pressed', () => {
     onPress();
   });
 
