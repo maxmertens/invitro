@@ -3,13 +3,17 @@
     font-family: Atlas Grotesk light;
     src: url(../font/AtlasGrotesk-Light.otf);
   }
-  @font-face {
+@font-face {
     font-family: Atlas Grotesk regular;
     src: url(../font/AtlasGrotesk-Regular.otf);
   }
-  @font-face {
+@font-face {
     font-family: Atlas Grotesk medium;
     src: url(../font/AtlasGrotesk-Medium.otf);
+  }
+@font-face {
+    font-family: Simplon light;
+    src: url(../font/SimplonBP-Light.otf);
   }
 
 
@@ -38,7 +42,7 @@ html, body {
     opacity: 1;
 }
 
-td {
+.topbar td {
     text-align: left;
     width: 25%;
     opacity: 0.25;
@@ -68,11 +72,7 @@ td {
     opacity: 1;
 }
 
-.screen1 {     
-    background: url(../img/screen01.png) center;
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
+
 
 .screen2 {     
     background: url(../img/screen02.png) center;

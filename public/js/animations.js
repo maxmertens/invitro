@@ -13,6 +13,22 @@ window.setInterval(function() {
 	$('#heartbeat-number').html(randomIntFromInterval(160,170));	
 }, 1000)
 
+window.setInterval(function() {
+	$('#vital-monitor-stats-main-01').html(randomIntFromInterval(37,39));	
+}, 2000)
+
+window.setInterval(function() {
+	$('#vital-monitor-stats-main-02').html(randomIntFromInterval(20,30));	
+}, 600)
+
+window.setInterval(function() {
+	$('#vital-monitor-stats-main-03').html(randomIntFromInterval(84,99) + '%');	
+}, 2500)
+
+window.setInterval(function() {
+	$('#vital-monitor-stats-main-04').html(randomIntFromInterval(20,30));	
+}, 1500)
+
 function randomIntFromInterval(min,max) // min and max included
 {
     return Math.floor(Math.random()*(max-min+1)+min);

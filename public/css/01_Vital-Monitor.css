@@ -5,11 +5,21 @@
     font-style: normal;
 }
 
-#heartbeat{
+#container-pulse-number{
     position: absolute;
-    top: 40%;
-    left: 65%;
+    bottom: 32px;
+    left: 5%;
+}
+#heartbeat-number {
+    font-family: Simplon light;
+    font-size: 66px;
+    font-weight: 100;
+    line-height: 40px;
+}
 
+#pulse {
+    height: 100px;
+    width: 100px;
 }
 
 #heartrate {
@@ -19,18 +29,24 @@
     left: 10%;
 }
 
-#pulse {
-    top: 50%;
-    width: 50%;
+
+
+
+
+.vital-monitor-stats {
+    position: absolute;
+    left: 290px;
+    bottom: 20px;
+    width: 55vw;
 }
 
-#heartbeat-number {
-    font-family: 'Roboto Mono', monospace;
-    position: absolute;
-    text-align: right;
-    
-    width: 150%;
-    font-size: 56px;
-    font-weight: 100;
-    line-height: 40px;
+.vital-monitor-stats-top {
+    font-size: 15px;
+    color: #515151;
+}
+
+.vital-monitor-stats-main {
+    font-size: 30px;
+    color: white !important;
+    font-family: Simplon light;
 }
