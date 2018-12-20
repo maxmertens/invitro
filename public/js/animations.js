@@ -33,3 +33,28 @@ function randomIntFromInterval(min,max) // min and max included
 {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
+
+//Screensaver
+var countertouch = false;
+var counter = 0;
+
+window.addEventListener('touchstart', function() {
+    $('#Screensaver').hide();
+    counter = 0;
+    console.log("touch!!!!!");
+    countertouch = true;
+
+    setInterval(function(){ 
+        counter = counter + 1;
+        console.log(counter);
+
+        if(counter > 10) {
+            $('#Screensaver').show();
+        }
+    }, 1000);
+
+});
+
+
+
+

@@ -26,6 +26,15 @@ html, body {
     overflow-y: hidden;
 }
 
+/*SCREENSAVER*/
+#Screensaver {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2000;
+}
+
+
 
 /* NAVIGATION TOP*/
 
