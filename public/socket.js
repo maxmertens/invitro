@@ -10,24 +10,18 @@ socket.on('data', function(val){
 
 
     // Logic for the active state
-    if (val === 'up') {
-        console.log('up');
+    if (val < 255) {
+        active = 0;
+    } else if (val > 255 && val < 511) {
+        active = 1;
+    } else if (val > 511 && val < 767) {
+        active = 2;
+    } else if (val > 767) {
+        active = 3;
+    }
 
-        if (active === 3) {
-            active = 0;
-        } else {
-            active++;
-        } 
-    } else if (val === 'down') {
-        console.log('down');
 
-        if (active === 0) {
 
-            active = 3;
-        } else {
-            active--;
-        } 
-    } 
 
     // Change the active state
     if (active == 0) {
