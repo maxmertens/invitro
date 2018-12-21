@@ -1,12 +1,13 @@
 
 let socket = io();
 let active = 0;
-
+var activeOld = 0;
+let touchstart = false;
 // When data is 'recieved' do something
-socket.on('data', function(val){
-    console.log(val);
-    console.log(active);
 
+socket.on('data', function(val){
+    // console.log(val);
+    // console.log(active + ":" + activeOld);
 
 
     // Logic for the active state
@@ -21,6 +22,19 @@ socket.on('data', function(val){
     }
 
 
+
+    if (active === activeOld) {
+        touchstart = false;
+        console.log('same');
+
+    } else {
+        console.log('not the same');
+        $('#Screensaver').addClass("hideScreensaver");
+    }
+
+     activeOld = active;
+
+    
 
 
     // Change the active state
@@ -67,4 +81,34 @@ socket.on('data', function(val){
         $('.screen2').removeClass('screen-active');
         $('.screen3').removeClass('screen-active');
     }
+
 });
+
+
+
+
+
+
+// function screensaver() {
+//     //Screensaver
+//     var cnt = 0;
+
+
+//     if (touchstart === true) {
+        
+
+//         6 s pause
+
+//         -> show
+        
+        
+//         setInterval(function(){ 
+//                 console.log(touchstart);
+//                 $('#Screensaver').removeClass("hideScreensaver");
+                
+            
+//         }, 6000);
+
+//     } 
+// }
+
