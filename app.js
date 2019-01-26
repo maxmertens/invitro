@@ -19,25 +19,34 @@ app.use(express.static(__dirname + '/public'));
 // Create board instance
 let board = new five.Board();
 
-
 board.on("ready", function() {
-  console.log('%cArduino ready', 'color: green;');
 
-  // Create a new `potentiometer` hardware instance.
-  potentiometer = new five.Sensor({
-    pin: "A2",
-    freq: 250
-  });
+  button1 = new five.Button(10);
+  button2 = new five.Button(11);
+  button3 = new five.Button(12);
+  button4 = new five.Button(13);
 
-  // Inject the `sensor` hardware into
-  // the Repl instance's context;
-  // allows direct command line access
   board.repl.inject({
-    pot: potentiometer
+    button: button
   });
+
+  button1.on("down", function() {
+    console.log("down1");
+  });
+  button2.on("down", function() {
+    console.log("down2");
+  });
+  button3.on("down", function() {
+    console.log("down3");
+  });
+  button4.on("down", function() {
+    console.log("down4");
+  });
+
+});
 
   // "data" get the current reading from the potentiometer
-  potentiometer.on("data", function() {
+  button1.on("data", function() {
     console.log(this.value, this.raw);
     io.emit('data', this.value);
   });
@@ -62,3 +71,26 @@ io.on('connection', function(socket){
     console.log('SOCKET.IO DISCONNECTED');
   })
 });
+
+
+
+
+
+
+/*
+board.on("ready", function() {
+  console.log('%cArduino ready', 'color: green;');
+
+  // Create a new `potentiometer` hardware instance.
+  potentiometer = new five.Sensor({
+    pin: "A2",
+    freq: 250
+  });
+
+  // Inject the `sensor` hardware into
+  // the Repl instance's context;
+  // allows direct command line access
+  board.repl.inject({
+    pot: potentiometer
+  });
+*/
