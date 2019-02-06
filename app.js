@@ -21,38 +21,42 @@ let board = new five.Board();
 
 board.on("ready", function() {
 
-  button1 = new five.Button(10);
-  button2 = new five.Button(11);
-  button3 = new five.Button(12);
-  button4 = new five.Button(13);
+  button1 = new five.Button(2);
+  button2 = new five.Button(3);
+  button3 = new five.Button(4);
+  button4 = new five.Button(5);
 
   board.repl.inject({
-    button: button
+    button: button1,
+    button: button2,
+    button: button3,
+    button: button4
   });
 
   button1.on("down", function() {
     console.log("down1");
+    io.emit('data', 1);
   });
+
   button2.on("down", function() {
     console.log("down2");
+    io.emit('data', 2);
   });
+
   button3.on("down", function() {
     console.log("down3");
+    io.emit('data', 3);
   });
-  button4.on("down", function() {
+
+  button3.on("down", function() {
     console.log("down4");
-  });
-
-});
-
-  // "data" get the current reading from the potentiometer
-  button1.on("data", function() {
-    console.log(this.value, this.raw);
-    io.emit('data', this.value);
+    io.emit('data', 4);
   });
 
 
 });
+
+
 
 // Begin 'listening' on the pre defined port number (3000)
 const server = http.createServer(app).listen(port, function(req, res){
