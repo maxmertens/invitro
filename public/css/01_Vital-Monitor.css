@@ -12,7 +12,7 @@
 }
 #heartbeat-number {
     font-family: Simplon light;
-    font-size: 66px;
+    font-size: 120px;
     font-weight: 100;
     line-height: 40px;
 }
@@ -39,7 +39,7 @@
 
 .vital-monitor-stats {
     position: absolute;
-    left: 290px;
+    right: 30px;
     bottom: 20px;
     width: 55vw;
 }
@@ -49,12 +49,12 @@
 }
 
 .vital-monitor-stats-top {
-    font-size: 15px;
+    font-size: 24px;
     color: #515151;
 }
 
 .vital-monitor-stats-main {
-    font-size: 30px;
+    font-size: 50px;
     color: white !important;
     font-family: Simplon light;
 }

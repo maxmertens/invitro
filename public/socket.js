@@ -19,7 +19,7 @@ socket.on('data', function(val){
     }
 
     // Change the active state
-    if (val == 1) {
+    if (val == 2) {
         $('.menu1').addClass('menu-active');
         $('.menu2').removeClass('menu-active');
         $('.menu3').removeClass('menu-active');
@@ -30,7 +30,7 @@ socket.on('data', function(val){
         $('.screen3').removeClass('screen-active');
         $('.screen4').removeClass('screen-active');
 
-    } else if (val == 2) {
+    } else if (val == 1) {
         $('.menu2').addClass('menu-active');
         $('.menu1').removeClass('menu-active');
         $('.menu3').removeClass('menu-active');
@@ -41,7 +41,7 @@ socket.on('data', function(val){
         $('.screen3').removeClass('screen-active');
         $('.screen4').removeClass('screen-active');
 
-    } else if (val == 3) {
+    } else if (val == 4) {
         $('.menu3').addClass('menu-active');
         $('.menu1').removeClass('menu-active');
         $('.menu2').removeClass('menu-active');
@@ -51,7 +51,7 @@ socket.on('data', function(val){
         $('.screen1').removeClass('screen-active');
         $('.screen2').removeClass('screen-active');
         $('.screen4').removeClass('screen-active');
-    }  else if (val == 4) {
+    }  else if (val == 3) {
         $('.menu4').addClass('menu-active');
         $('.menu1').removeClass('menu-active');
         $('.menu2').removeClass('menu-active');
