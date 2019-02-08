@@ -5,8 +5,9 @@ let io = require('socket.io');
 let five = require("johnny-five");
 let rotaryEncoder = require('./public/js/encoder');
 
-// require jquery?? <-
-
+// LED heart beat
+var bright = 0;
+var brightMax = 20;
 
 // Create app instance
 let app = new express();
@@ -54,7 +55,34 @@ board.on("ready", function() {
   });
 
 
+  // LED heart beat
+  var led = new five.Led(11);
+
+  this.repl.inject({
+    led: led
+  });
+
+  setInterval(() => {
+      
+    if (bright <= brightMax) {
+        led.brightness(bright);
+    } else if (bright > brightMax && bright <= brightMax*2) {
+        led.brightness((brightMax*2 - bright)); 
+    } else {
+        bright = 0;
+    }
+    bright ++;
+  }, 30);
+
+
 });
+
+
+
+
+
+
+
 
 
 
