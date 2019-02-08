@@ -11,6 +11,8 @@ socket.on('data', function(val){
 
     if (active === activeOld) {
         touchstart = false;
+        $('#Screensaver').addClass("hideScreensaver");
+
     } else {
         console.log('not the same');
         $('#Screensaver').addClass("hideScreensaver");

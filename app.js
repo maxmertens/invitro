@@ -48,7 +48,7 @@ board.on("ready", function() {
     io.emit('data', 3);
   });
 
-  button3.on("down", function() {
+  button4.on("down", function() {
     console.log("down4");
     io.emit('data', 4);
   });
