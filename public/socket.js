@@ -30,7 +30,7 @@ socket.on('data', function(val){
         $('.screen3').removeClass('screen-active');
         $('.screen4').removeClass('screen-active');
 
-    } else if (val == 1) {
+    } else if (val == 4) {
         $('.menu2').addClass('menu-active');
         $('.menu1').removeClass('menu-active');
         $('.menu3').removeClass('menu-active');
@@ -41,7 +41,7 @@ socket.on('data', function(val){
         $('.screen3').removeClass('screen-active');
         $('.screen4').removeClass('screen-active');
 
-    } else if (val == 4) {
+    } else if (val == 1) {
         $('.menu3').addClass('menu-active');
         $('.menu1').removeClass('menu-active');
         $('.menu2').removeClass('menu-active');

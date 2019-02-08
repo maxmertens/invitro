@@ -7,7 +7,7 @@ let rotaryEncoder = require('./public/js/encoder');
 
 // LED heart beat
 var bright = 0;
-var brightMax = 20;
+var brightMax = 180;
 
 // Create app instance
 let app = new express();
@@ -72,7 +72,7 @@ board.on("ready", function() {
         bright = 0;
     }
     bright ++;
-  }, 30);
+  }, 1);
 
 
 });
